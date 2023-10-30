@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "643572237016",
+    "project_id": "sagu-e2fae",
+    "storage_bucket": "sagu-e2fae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:643572237016:android:8036d9bd2cc0bff7c58dad",
+        "android_client_info": {
+          "package_name": "com.example.sagu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqu1qqHiTLrv7ZLy3uRy3-LwLK0yrIRNg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
