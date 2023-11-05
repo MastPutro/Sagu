@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListMenu"
+    android:background="#f7f725">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/search"
+        android:background="@drawable/lavender_border"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="16dp"
+        android:drawablePadding="10dp"
+        android:hint="Search"
+        android:drawableLeft="@raw/search"
+        android:gravity="start|center_vertical"
+        android:textColor="@color/lavender"
+        android:backgroundTint="#ffff"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="601dp"
+        android:orientation="vertical"
+        android:id="@+id/conten"
+        android:layout_below="@+id/search"
+        tools:listitem="@layout/fooditem"/>
+
+    <LinearLayout
+        android:id="@+id/botnav"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#2ce65d"
+
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_below="@+id/conten"
+        android:gravity="center">
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/baseline_format_list_bulleted_24"
+            android:id="@+id/listorder"
+            android:clickable="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@raw/food"
+            android:id="@+id/listmenu"
+            android:clickable="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@raw/books"
+            android:id="@+id/cart"
+            android:clickable="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="75dp"
+        android:backgroundTint="@color/lavender"
+        android:src="@drawable/baseline_shopping_cart_checkout_24"
+        app:tint="@color/white" />
+
+</RelativeLayout>

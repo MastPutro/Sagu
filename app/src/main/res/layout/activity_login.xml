@@ -16,7 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.062"
-        app:srcCompat="@drawable/lglogo" />
+        app:srcCompat="@raw/lglogo" />
 
     <TextView
         android:id="@+id/textView2"
@@ -84,7 +84,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passwordtxt"
         app:layout_constraintVertical_bias="0.205"
-        app:srcCompat="@drawable/lgbtn" />
+        app:srcCompat="@raw/lgbtn" />
     <ProgressBar
         android:id="@+id/progresbar"
         android:visibility="gone"

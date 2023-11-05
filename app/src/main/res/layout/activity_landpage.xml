@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".landpage"
-    android:background="@drawable/bglandpage">
+    android:background="@raw/bglandpage">
 
     <ImageView
         android:id="@+id/imageView"
@@ -17,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.163"
-        app:srcCompat="@drawable/logolandpage" />
+        app:srcCompat="@raw/logolandpage" />
 
     <TextView
         android:id="@+id/textView"
@@ -42,7 +42,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.133"
-        app:srcCompat="@drawable/btnmasuk"
+        app:srcCompat="@raw/btnmasuk"
         android:background="#0fff"/>
 
     <ImageButton
@@ -57,5 +57,5 @@
         app:layout_constraintTop_toBottomOf="@+id/masukbtn"
         app:layout_constraintVertical_bias="0.183"
         android:background="#0fff"
-        app:srcCompat="@drawable/btnmendaftar" />
+        app:srcCompat="@raw/btnmendaftar" />
 </androidx.constraintlayout.widget.ConstraintLayout>
